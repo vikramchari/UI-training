@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Styled hover button</title>
+        <style>
+        .container {
+            box-shadow: 2px 2px 2px 2px;
+            width: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .img-sec {
+            width: 100px;
+            height: 100px;
+        }
+        .lang-know {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .container:before,
+        .container:after{
+            position:absolute;
+            content:'';
+            width:100%;
+            height:100%;
+            z-index:5;
+        }
+        .container:before{
+            top:-110%;
+            background-color: #e04e01;
+            transition:left .3s;
+        }
+        .container:after{
+            bottom:-110%;
+            background-color: #05293e;
+            transition: right .3s;
+        }
+        .container:hover::before{
+            top:-50%;
+        }
+        .container:hover::after{
+            bottom:-50%;
+        }
+        .cc{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            transition: z-index .3s;
+            z-index:1;
+        }
+        .container:hover .cc{
+            z-index: 10;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .image-sec {
+            text-align: center;
+            position: relative;
+        }
+        .all-languages {
+            text-align: center;
+        }
+        .img-sec {
+            position: absolute;
+            left:50%;
+            transform:translate(-50%,-50%);
+            transition: z-index .3s;
+            z-index:6;
+            bottom: -160px;
+        }
+        .name {
+            position: absolute;
+            left:50%;
+            transform:translate(-50%,-50%);
+            transition: z-index .3s;
+            z-index:6;
+        }
+        .text-msg {
+            position: absolute;
+            right: 30%;
+            top: 35%;
+            z-index: 10;
+        }
+        .all-languages {
+            color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='image-sec'>
+                <img  class ='img-sec ' src='C:\Users\cogjava3269\Downloads\profile.jpg'>
+            </div>
+            <div class="text-msg">
+                <p>Vikram Achari</p>
+                <p class="lang-know all-languages">Languages knowns</p>
+                <div class='all-languages'>
+                    <span class="lang-know">c</span>
+                    <span class="lang-know">java</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
