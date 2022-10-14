@@ -1,0 +1,65 @@
+.sign-in-form{
+    background-color: rgb(32, 85, 168);
+    color: #fff;
+    width: 700px;
+    border: 5px double white;
+    padding: 4rem;
+    margin: 2rem auto;
+}
+h1 {
+    text-align: center;
+    font-weight: 200;
+}
+
+.form {
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    width: 500px;
+    height: 290px;
+    padding: 1rem 4rem;
+}
+
+.form-item {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.pfi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.1em
+}
+
+.form-item input {
+    width: 100%;
+    margin: 10px 0;
+    padding: .6rem;
+    font-size: .9rem;
+}
+.password-input {
+ margin-top: 0.1em;
+}
+input[type='submit'] {
+    background-color: rgb(58, 197, 58);
+    border: none;
+    border-radius: 5px;
+    width: 525px;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(239, 238, 238);
+    /* font-weight: 100; */
+}
+.new-user{
+    margin: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    color: black;
+    width: 630px;
+    height: 4rem;
+    font-size: 1rem;
+}
+.new-user-p{
+    text-align: center;
+    padding-top: 1.2rem;
+}     
