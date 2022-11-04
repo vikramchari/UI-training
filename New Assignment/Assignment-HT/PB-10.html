@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>Layout example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 20px;
+    }
+    #main {
+      display: flex;
+      flex: 1;
+    }
+    #main > article {
+      flex: 1;
+      order: 1;
+      background: rgb(1, 146, 1);
+      color: white;
+    }
+    #main > aside {
+      flex: 0 0 20vw;
+      box-shadow: 2px 2px 2px 2px red;
+    }
+    #main > aside {
+      background: rgb(241, 87, 87);
+      order: 2;
+      color: white;
+      margin-left: 20px;
+    }
+    header,
+    footer {
+      background: rgb(85, 85, 248);
+      height: 10vh;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      margin: 15px 0;
+      box-shadow: inset;
+    }
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+      padding: 1em;
+    }
+    .parent1,
+    .parent2,
+    .parent3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .child {
+      width: 10%;
+      height: 70px;
+      background-color: rgb(2, 66, 2);
+      box-shadow: 2px 2px 2px 2px rgb(2, 66, 2);
+      color: white;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .parent2,
+    .parent3 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>
+      main
+      <div class="parent1">
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+      </div>
+      <div class="parent2">
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+        <div class="child"></div>
+      </div>
+      <div class="parent3">
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+        <div class="child">Item</div>
+      </div>
+    </article>
+    <aside>Sidebar</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
